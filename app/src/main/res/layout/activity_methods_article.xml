@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFC4"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.gandroid.motif.MethodsArticle">
+
+
+    <RelativeLayout
+        android:id="@+id/Famplansection"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:scaleType="fitXY"
+            android:id="@+id/FamplanTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:text="@string/family_planning"
+            android:textColor="#FD8C84"
+            android:textSize="25sp" />
+
+        <TextView
+            android:scaleType="fitXY"
+            android:id="@+id/Famplandesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/FamplanTitle"
+            android:layout_alignStart="@+id/FamplanTitle"
+            android:textColor="#FD8C84"
+            android:layout_below="@+id/FamplanTitle"
+            android:text="@string/a_brief_summary_to_understand_family_planning" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/Famplansection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2691E"
+        android:id="@+id/methodlayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/athiti_extralight"
+            android:text="@string/methods"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/methodlayout"
+        android:fontFamily="@font/athiti_extralight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewMethods">
+    </ListView>
+
+    </LinearLayout>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context="org.gandroid.motif.MethodsArticle">
+
+ <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/FPtitle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FPBriefsumm"
+            android:layout_below="@+id/FPtitle"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout> -->

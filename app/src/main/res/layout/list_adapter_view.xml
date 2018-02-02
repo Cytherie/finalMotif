@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFC4"
+    android:weightSum="100">
+
+    <TextView
+        android:fontFamily="@font/athiti_extralight"
+        android:textColor="#FD8C84"
+        android:id="@+id/Lastperiod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:background="@drawable/textviewborder"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:fontFamily="@font/athiti_extralight"
+        android:textColor="#FD8C84"
+        android:id="@+id/Dayslasted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:background="@drawable/textviewborder"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:fontFamily="@font/athiti_extralight"
+        android:textColor="#FD8C84"
+        android:id="@+id/Dateended"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33"
+        android:background="@drawable/textviewborder"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

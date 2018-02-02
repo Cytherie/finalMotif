@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFC4"
+    tools:context="org.gandroid.motif.Periodtracker">
+
+
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/groupwvandDays">
+
+
+        <WebView
+            android:id="@+id/animatedgif"
+            android:layout_width="231dp"
+            android:layout_height="207dp"
+            android:background="@null"
+            android:layout_marginTop="150dp"
+            />
+
+        <Button
+            android:id="@+id/tvDaysleft"
+            android:layout_width="231dp"
+            android:layout_height="207dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/text_view_circle"
+            android:fontFamily="@font/athiti_extralight"
+            android:padding="10dp"
+            android:text="@string/tvDaysleft"
+            android:textColor="#FD8C84"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="jelly_bean" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/athiti_extralight"
+        android:text="@string/tv1"
+        android:textAlignment="center"
+        android:textColor="#FD8C84"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/groupwvandDays"
+         />
+
+    <Button
+        android:background="#4F0212"
+        android:fontFamily="@font/athiti_extralight"
+        android:textColor="#FFFFC4"
+        android:id="@+id/buttonOkay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/buttonOkay"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvNEXTPERIOD"
+         />
+
+    <Button
+        android:fontFamily="@font/athiti_extralight"
+        android:background="#4F0212"
+        android:textColor="#FFFFC4"
+        android:id="@+id/buttonendperiod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/buttomendperiod"
+        android:visibility="visible"
+        android:layout_below="@+id/buttonstartnow"
+         />
+
+    <Button
+        android:id="@+id/buttonstartnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#4F0212"
+        android:fontFamily="@font/athiti_extralight"
+        android:text="@string/buttonstartnow"
+        android:textColor="#FFFFC4"
+        android:visibility="visible"
+        android:layout_below="@+id/buttonOkay"
+        />
+
+    <TextView
+        android:id="@+id/tvNEXTPERIOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tvNEXTPERIOD"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMsg"
+        android:layout_below="@+id/tvMsg"/>
+
+</RelativeLayout>

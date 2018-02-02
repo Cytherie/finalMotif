@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.gandroid.motif">
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="26" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".Menu"/>
+        <activity android:name=".Periodtracker" />
+        <activity android:name=".Welcomescreen" />
+        <activity android:name=".Secondwcscreen" />
+        <activity android:name=".dialognote" />
+        <activity android:name=".Customdialog" />
+        <activity android:name=".Updateperiodcycles" />
+        <activity android:name=".ViewListContents" />
+        <activity android:name=".Welcomebackscreen" />
+        <activity android:name=".CalendarView" />
+        <activity android:name=".methodcontent" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Methods"
+            android:label="@string/title_activity_methods"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MethodsArticle" />
+        <activity android:name=".Videos" />
+        <activity
+            android:name=".AndroidVideoView"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".Gridmenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

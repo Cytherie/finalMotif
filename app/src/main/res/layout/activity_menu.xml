@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2c354d"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="org.gandroid.motif.Menu">
+
+   <RelativeLayout
+       android:layout_weight="30"
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:background="#d86190">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/athiti_extralight"
+           android:text="@string/menu"
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:textColor="@android:color/black"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"/>
+   </RelativeLayout>
+   <ListView
+       android:layout_weight="70"
+       android:fontFamily="@font/athiti_extralight"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/listView">
+   </ListView>
+
+</LinearLayout>
